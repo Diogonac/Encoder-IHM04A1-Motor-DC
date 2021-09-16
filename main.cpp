@@ -48,9 +48,6 @@ int main() {
   Encoder.rise(&count_rise);
 
 
-  // Definição da taxa de amostragem
-  amostragem.attach(&callback, dt);
-
   while (true) {
 
       calc_velocidade();
@@ -67,7 +64,6 @@ int main() {
       EN_A = 0.0; // Desacopla (Estado de alta impedancia)
     }
 
-    teste.reset();
   }
 }
 
